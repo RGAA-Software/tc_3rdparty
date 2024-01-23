@@ -17,18 +17,21 @@ public:
 	virtual void unlock() = 0;
 };
 
-class SnowflakeLockStdMutex : public std::mutex, SnowflakeLockBase
+class SnowflakeLockStdMutex : public SnowflakeLockBase
 {
 public:
 	virtual void lock() override
 	{
-		std::mutex::lock();
+		mtx_.lock();
 	}
 
 	virtual void unlock() override
 	{
-		std::mutex::unlock();
+		mtx_.unlock();
 	}
+
+private:
+    std::mutex mtx_;
 };
 
 #if defined(_WIN32)
@@ -64,18 +67,18 @@ private:
 class SnowflakeScopeLock
 {
 public:
-	SnowflakeScopeLock(SnowflakeLockBase& lock) : lock(lock)
+	SnowflakeScopeLock(const std::shared_ptr<SnowflakeLockBase>& lock) : lock(lock)
 	{
-		lock.lock();
+		lock->lock();
 	}
 
 	~SnowflakeScopeLock()
 	{
-		lock.unlock();
+		lock->unlock();
 	}
 
 private:
-	SnowflakeLockBase& lock;
+	std::shared_ptr<SnowflakeLockBase> lock;
 };
 
 class SnowflakeId
@@ -107,7 +110,7 @@ public:
 		cfgEpoch = epoch;
 		cfgMachineId = machineId;
 		currentWorkerId = 0;
-		lock = SnowflakeLockType();
+		lock = std::make_shared<SnowflakeLockType>();
 	}
 
 	static SnowflakeId generate()
@@ -132,7 +135,7 @@ private:
 	static inline std::uint64_t cfgEpoch;
 	static inline std::uint64_t cfgMachineId;
 	static inline std::uint64_t currentWorkerId;
-	static inline SnowflakeLockType lock;
+	static inline std::shared_ptr<SnowflakeLockType> lock = nullptr;
 };
 
 inline bool operator==(const SnowflakeId& lhs, const SnowflakeId& rhs)
