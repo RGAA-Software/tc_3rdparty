@@ -1,7 +1,8 @@
 //
 // Created by gelldur on 26.11.2019.
 //
-#pragma once
+#ifndef __EVENT_BUS_H__
+#define __EVENT_BUS_H__
 
 #include <any>
 #include <limits>
@@ -56,3 +57,5 @@ private:
 };
 
 } // namespace dexode
+
+#endif

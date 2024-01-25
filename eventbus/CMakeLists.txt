@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.22)
 
 # Use ';' to specify multiple e.g. ZIP;TGZ;DEB
 set(CPACK_GENERATOR "" CACHE STRING "Set packages CPack should build e.g. ZIP;TGZ;DEB")
@@ -58,18 +58,19 @@ add_library(Dexode::EventBus ALIAS EventBus)
 # - std::shared_mutex used
 # - nested namespaces e.g. my::name::space
 
-set_target_properties(EventBus PROPERTIES
-	CXX_STANDARD 17
-	CXX_STANDARD_REQUIRED YES
-	CXX_EXTENSIONS NO # -std=c++17 rather than -std=gnu++17
-	)
+#set_target_properties(EventBus PROPERTIES
+#	CXX_STANDARD 20
+#	CXX_STANDARD_REQUIRED YES
+#	CXX_EXTENSIONS NO # -std=c++17 rather than -std=gnu++17
+#	)
 
-target_compile_features(EventBus PUBLIC cxx_std_17)
+#target_compile_features(EventBus PUBLIC cxx_std_17)
 
-target_include_directories(EventBus PUBLIC
-	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src/>
-	$<INSTALL_INTERFACE:include/>
-	)
+#target_include_directories(EventBus PUBLIC
+#	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src/>
+#	$<INSTALL_INTERFACE:include/>
+#	)
+message(" xx "  ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(EventBus ${CMAKE_THREAD_LIBS_INIT})
 
 # Add definitions for targets
