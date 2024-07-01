@@ -16,3 +16,6 @@
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg.git
+[submodule "opus"]
+	path = opus
+	url = https://github.com/xiph/opus.git
