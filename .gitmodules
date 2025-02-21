@@ -1,0 +1,30 @@
+[submodule "DirectXTex"]
+	path = DirectXTex
+	url = https://github.com/microsoft/DirectXTex.git
+[submodule "asio2"]
+	path = asio2
+	url = git@github.com:zhllxt/asio2.git
+[submodule "leveldb"]
+	path = leveldb
+	url = https://github.com/google/leveldb.git
+[submodule "sqlite_orm"]
+	path = sqlite_orm
+	url = https://github.com/fnc12/sqlite_orm.git
+[submodule "stb"]
+	path = stb
+	url = https://github.com/nothings/stb.git
+[submodule "vcpkg"]
+	path = vcpkg
+	url = https://github.com/microsoft/vcpkg.git
+[submodule "opus"]
+	path = opus
+	url = https://github.com/xiph/opus.git
+[submodule "libvlcpp"]
+	path = libvlcpp
+	url = git@github.com:videolan/libvlcpp.git
+[submodule "protobuf"]
+	path = protobuf
+	url = git@github.com:protocolbuffers/protobuf.git
+[submodule "abseil-cpp"]
+	path = abseil-cpp
+	url = git@github.com:abseil/abseil-cpp.git
