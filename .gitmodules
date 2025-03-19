@@ -28,3 +28,6 @@
 [submodule "abseil-cpp"]
 	path = abseil-cpp
 	url = git@github.com:abseil/abseil-cpp.git
+[submodule "qwindowkit"]
+	path = qwindowkit
+	url = git@github.com:RGAA-Software/qwindowkit.git

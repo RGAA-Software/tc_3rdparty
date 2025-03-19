@@ -25,3 +25,7 @@ add_subdirectory(leveldb)
 add_subdirectory(sqlite_orm)
 add_subdirectory(opus)
 add_subdirectory(libyuv)
+
+set(QWINDOWKIT_BUILD_EXAMPLES ON)
+add_subdirectory(qwindowkit/qmsetup)
+add_subdirectory(qwindowkit)
