@@ -26,6 +26,6 @@ add_subdirectory(sqlite_orm)
 add_subdirectory(opus)
 add_subdirectory(libyuv)
 
-set(QWINDOWKIT_BUILD_EXAMPLES ON)
+set(QWINDOWKIT_BUILD_EXAMPLES OFF)
 add_subdirectory(qwindowkit/qmsetup)
 add_subdirectory(qwindowkit)
