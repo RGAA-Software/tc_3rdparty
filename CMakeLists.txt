@@ -17,6 +17,10 @@ if(WIN32)
 	# git tag: v29.3
 	add_subdirectory(protobuf)
 
+	# qwindowkit
+	set(QWINDOWKIT_BUILD_EXAMPLES OFF)
+	add_subdirectory(qwindowkit/qmsetup)
+	add_subdirectory(qwindowkit)
 endif()
 
 set(LEVELDB_BUILD_TESTS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
@@ -25,7 +29,3 @@ add_subdirectory(leveldb)
 add_subdirectory(sqlite_orm)
 add_subdirectory(opus)
 add_subdirectory(libyuv)
-
-set(QWINDOWKIT_BUILD_EXAMPLES OFF)
-add_subdirectory(qwindowkit/qmsetup)
-add_subdirectory(qwindowkit)
