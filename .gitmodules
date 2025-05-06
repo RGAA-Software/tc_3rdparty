@@ -31,3 +31,6 @@
 [submodule "qwindowkit"]
 	path = qwindowkit
 	url = git@github.com:RGAA-Software/qwindowkit.git
+[submodule "libyuv"]
+	path = libyuv
+	url = https://chromium.googlesource.com/libyuv/libyuv
