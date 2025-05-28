@@ -21,6 +21,9 @@ if(WIN32)
 	set(QWINDOWKIT_BUILD_EXAMPLES OFF)
 	add_subdirectory(qwindowkit/qmsetup)
 	add_subdirectory(qwindowkit)
+
+	#libyuv
+	add_subdirectory(libyuv)
 endif()
 
 set(LEVELDB_BUILD_TESTS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
@@ -28,4 +31,3 @@ set(LEVELDB_BUILD_BENCHMARKS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
 add_subdirectory(leveldb)
 add_subdirectory(sqlite_orm)
 add_subdirectory(opus)
-add_subdirectory(libyuv)
