@@ -18,7 +18,13 @@ namespace tc
         return tl::make_unexpected(err);
     }
 
-    #define TRError tl::make_unexpected
+    template<class T>
+    static Result<T, int> ErrInt(int err) {
+        return tl::make_unexpected(err);
+    }
+
+
+#define TRError tl::make_unexpected
 
 }
 
