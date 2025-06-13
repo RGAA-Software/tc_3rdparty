@@ -18,9 +18,9 @@ if(WIN32)
 	add_subdirectory(protobuf)
 
 	# qwindowkit
-	set(QWINDOWKIT_BUILD_EXAMPLES OFF)
-	add_subdirectory(qwindowkit/qmsetup)
-	add_subdirectory(qwindowkit)
+	#set(QWINDOWKIT_BUILD_EXAMPLES OFF)
+	#add_subdirectory(qwindowkit/qmsetup)
+	#add_subdirectory(qwindowkit)
 
 	#libyuv
 	add_subdirectory(libyuv)
