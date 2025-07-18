@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.22)
 
-include_directories(${CMAKE_SOURCE_DIR}/tc_3rdparty/)
-include_directories(${CMAKE_SOURCE_DIR}/tc_3rdparty/eventbus/src)
-include_directories(${CMAKE_SOURCE_DIR}/tc_3rdparty/stb)
+include_directories(${GR_PROJECT_PATH}/tc_3rdparty/)
+include_directories(${GR_PROJECT_PATH}/tc_3rdparty/eventbus/src)
+include_directories(${GR_PROJECT_PATH}/tc_3rdparty/stb)
 add_subdirectory(eventbus)
 if(WIN32)
 	add_subdirectory(DirectXTex)
 
-	include_directories(${CMAKE_SOURCE_DIR}/deps/tc_3rdparty/abseil-cpp)
+	include_directories(${GR_PROJECT_PATH}/deps/tc_3rdparty/abseil-cpp)
 	#set(protobuf_MSVC_STATIC_RUNTIME OFF CACHE BOOL "disable protobuf_MSVC_STATIC_RUNTIME" FORCE)
 	set(protobuf_BUILD_TESTS OFF CACHE BOOL "disable protobuf_BUILD_TESTS" FORCE)
 	set(protobuf_INSTALL OFF)
