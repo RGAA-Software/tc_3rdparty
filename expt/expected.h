@@ -25,6 +25,7 @@ namespace tc
 
 
 #define TRError tl::make_unexpected
+#define TcErr tl::make_unexpected
 
 }
 
