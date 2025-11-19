@@ -1,0 +1,3 @@
+#project(miniz)
+#
+#add_library(miniz miniz.c)
