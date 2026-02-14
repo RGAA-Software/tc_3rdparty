@@ -13,6 +13,9 @@ namespace tc
     template<class T, class E>
     using Result = tl::expected<T, E>;
 
+    template<typename T>
+    using ResultStrErr = Result<T, std::string>;
+
     template<class T>
     static Result<T, std::string> Err(const std::string& err) {
         return tl::make_unexpected(err);
@@ -25,6 +28,7 @@ namespace tc
 
 
 #define TRError tl::make_unexpected
+#define TcErr tl::make_unexpected
 
 }
 
