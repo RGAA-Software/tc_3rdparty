@@ -44,9 +44,6 @@ endif()
 set(LEVELDB_BUILD_TESTS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
 set(LEVELDB_BUILD_BENCHMARKS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
 add_subdirectory(leveldb)
-<<<<<<< HEAD
 add_subdirectory(sqlite_orm)
-=======
 add_subdirectory(sqlite35)
->>>>>>> 9d0401838cc270e968a17d1ba0ce0ebb8e51cb0a
 add_subdirectory(opus)
