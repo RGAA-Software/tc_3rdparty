@@ -16,11 +16,11 @@ if(WIN32)
 	#add_subdirectory(qwindowkit)
 
 	#libyuv
-	add_subdirectory(libyuv)
+	#add_subdirectory(libyuv)
 endif()
 
-set(LEVELDB_BUILD_TESTS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
-set(LEVELDB_BUILD_BENCHMARKS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
-add_subdirectory(leveldb)
+#set(LEVELDB_BUILD_TESTS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
+#set(LEVELDB_BUILD_BENCHMARKS OFF CACHE BOOL "LEVELDB_BUILD_TESTS OFF" FORCE)
+#add_subdirectory(leveldb)
 add_subdirectory(sqlite35)
 #add_subdirectory(sqlite_orm)
