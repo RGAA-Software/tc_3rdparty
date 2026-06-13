@@ -19,12 +19,6 @@
 [submodule "opus"]
 	path = opus
 	url = https://github.com/xiph/opus.git
-[submodule "protobuf"]
-	path = protobuf
-	url = git@github.com:protocolbuffers/protobuf.git
-[submodule "abseil-cpp"]
-	path = abseil-cpp
-	url = git@github.com:abseil/abseil-cpp.git
 [submodule "libyuv"]
 	path = libyuv
 	url = https://chromium.googlesource.com/libyuv/libyuv
