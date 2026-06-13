@@ -6,7 +6,7 @@ add_subdirectory(eventbus)
 if(WIN32)
 
 	if(DirectXTex_ENABLED)
-		add_subdirectory(DirectXTex)
+		#add_subdirectory(DirectXTex)
 	endif()
 
 	# qwindowkit
