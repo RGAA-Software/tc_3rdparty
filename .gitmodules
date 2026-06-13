@@ -1,15 +1,9 @@
-[submodule "DirectXTex"]
-	path = DirectXTex
-	url = https://github.com/microsoft/DirectXTex.git
 [submodule "asio2"]
 	path = asio2
 	url = git@github.com:zhllxt/asio2.git
 [submodule "sqlite_orm"]
 	path = sqlite_orm
 	url = https://github.com/fnc12/sqlite_orm.git
-[submodule "stb"]
-	path = stb
-	url = https://github.com/nothings/stb.git
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg.git
