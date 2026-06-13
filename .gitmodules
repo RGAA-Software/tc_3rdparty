@@ -4,9 +4,6 @@
 [submodule "asio2"]
 	path = asio2
 	url = git@github.com:zhllxt/asio2.git
-[submodule "leveldb"]
-	path = leveldb
-	url = https://github.com/google/leveldb.git
 [submodule "sqlite_orm"]
 	path = sqlite_orm
 	url = https://github.com/fnc12/sqlite_orm.git
@@ -16,6 +13,3 @@
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg.git
-[submodule "libyuv"]
-	path = libyuv
-	url = https://chromium.googlesource.com/libyuv/libyuv
