@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.22)
 
 include_directories(${GR_PROJECT_PATH}/tc_3rdparty/)
 include_directories(${GR_PROJECT_PATH}/tc_3rdparty/eventbus/src)
-include_directories(${GR_PROJECT_PATH}/tc_3rdparty/stb)
 add_subdirectory(eventbus)
 if(WIN32)
 
